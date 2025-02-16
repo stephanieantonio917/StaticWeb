@@ -1,9 +1,10 @@
 .header-container {
-    border: 2px solid blue;          /* Blue border around the header */
-    background-color: #e0f0ff;         /* Light blue background */
-    padding: 20px;                   /* Space inside the container */
-    margin: 20px auto;               /* Centered container with margin */
-    border-radius: 8px;              /* Rounded corners */
-    max-width: 800px;                /* Optional: limit the width */
+    border: 2px solid blue;
+    background-color: #002147;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
   }
   

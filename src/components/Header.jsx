@@ -1,22 +1,13 @@
 import React from 'react'
-import './Header.css' // if you want to use your CSS file
+import './Header.css' 
 
 const Header = ({ myName }) => {
   return (
     <header
-      className="header-container" // using the CSS class from Header.css
-      style={{
-        // Alternatively, if you want to use inline styles:
-        border: '2px solid blue',
-        backgroundColor: '#e0f0ff',
-        padding: '20px',
-        margin: '20px auto',
-        borderRadius: '8px',
-        maxWidth: '800px',
-        textAlign: 'center'
-      }}
+      className="header-container" // CSS class from Header.css
+  
     >
-      <h1>
+      <h1 style={{ color: 'white' }}>
         Welcome {myName} to the <span style={{ color: 'red' }}>CodeCraft</span> Labs Intranet
       </h1>
       <nav>

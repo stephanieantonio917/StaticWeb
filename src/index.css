@@ -1,9 +1,19 @@
-/* Global CSS (optional) */
+
 body {
+
+
+  h2 {
+    color: #002147;
+  }
+
+  h3 {
+    color: #cc5500;
+  }
+  
   margin: 0;
   font-family: sans-serif;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: lightgrey;
 }
 
 a {
@@ -13,4 +23,6 @@ a {
 
 a:hover {
   text-decoration: underline;
+
+ 
 }
