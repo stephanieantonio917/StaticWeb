@@ -1,27 +1,31 @@
 import React from 'react'
 import './Header.css' 
 
-const Header = ({ myName }) => {
-  return (
-    <header
-      className="header-container" // CSS class from Header.css
-  
-    >
-      <h1 style={{ color: 'white' }}>
-        Welcome {myName} to the <span style={{ color: 'red' }}>CodeCraft</span> Labs Intranet
-      </h1>
-      <nav>
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-          <li style={{ display: 'inline-block', margin: '0 1rem' }}>
-            <a href="#home">Home</a>
-          </li>
-          <li style={{ display: 'inline-block', margin: '0 1rem' }}>
-            <a href="#emp_mgmt">Employee Management</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  )
-}
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
-export default Header
+const Header = () => {
+  return (
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>
+            Home
+          </Link>
+        </Typography>
+        <Link
+          to="/employee-management"
+          style={{ color: '#fff', textDecoration: 'none', marginLeft: '1rem' }}
+        >
+          Employee Management
+        </Link>
+      </Toolbar>
+    </AppBar>
+  );
+};
+
+export default Header;
+
+
